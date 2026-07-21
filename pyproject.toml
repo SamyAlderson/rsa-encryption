@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "rsa-encryption"
+version = "1.0.0"
+description = "A simple implementation of RSA encryption in Python"
+authors = ["Samy Alderson"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+cryptography = "^38.0.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.2"
+pytest-cov = "^2.12.1"
+
+[tool.black]
+line_length = 88
+
+[tool.isort]
+profile = "black"
+
+[build-system]
+requires = ["poetry>=0.650.0"]
+build-backend = "poetry.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = [
+    "--cov=src",
+    "--cov-report=term-missing",
+    "--cov-report=xml",
+    "--junit-xml=pytest_report.xml",
+]
+python_paths = ["src/"]
+
+[tool.black]
+line_length = 88
+
+[tool.isort]
+profile = "black"
