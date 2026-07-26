@@ -1,12 +1,11 @@
 from setuptools import setup, find_packages
 
-# Specify the project's metadata
 setup(
     name='rsa-encryption',
     version='1.0',
-    description='A simple implementation of RSA encryption in Python',
+    description='Simple RSA encryption in Python',
     long_description=open('README.md').read(),
-    long_description_content_type='text/markdown',
+    long_description_content_type='text/plain',
     url='https://github.com/samyalder/rsa-encryption',
     author='Samy Alderson',
     author_email='samyalder@example.com',
