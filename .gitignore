@@ -1,22 +1,35 @@
 # .gitignore
 
-# ignore the build folder
+# ignore node_modules and yarn.lock
+node_modules/
+yarn.lock
+
+# ignore pyc files
+*.py[cod]
+
+# ignore coverage files
+coverage.xml
+coverage/
+htmlcov/
+
+# ignore build artifacts
+dist/
 build/
 
-# ignore the venv folder
-venv/
+# ignore IDE config
+.idea/
+.vscode/
 
-# ignore the coverage folder
-coverage/
+# ignore Docker stuff
+docker-compose.yml
+docker/
 
-# ignore the pycache folders
-__pycache__/
+# ignore macOS specific files
+.DS_Store
 
-# ignore the ruff cache folder
-.ruffcache/
+# ignore Windows specific files
+Thumbs.db
+ehthumbs.db
 
-# ignore the ruff config file
-.ruffconfig
-
-# ignore the ruff log file
-.rufflog
+# ignore Visual Studio Code specific files
+.vscode/
