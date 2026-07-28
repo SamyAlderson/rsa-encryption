@@ -1,35 +1,17 @@
-# .gitignore
+# ignore .env file
+.env
 
-# ignore node_modules and yarn.lock
+# ignore node_modules
 node_modules/
-yarn.lock
+
+# ignore build artifacts
+build/
+
+# ignore coverage results
+coverage/
 
 # ignore pyc files
 *.py[cod]
 
-# ignore coverage files
-coverage.xml
-coverage/
-htmlcov/
-
-# ignore build artifacts
-dist/
-build/
-
-# ignore IDE config
-.idea/
-.vscode/
-
-# ignore Docker stuff
-docker-compose.yml
-docker/
-
-# ignore macOS specific files
-.DS_Store
-
-# ignore Windows specific files
-Thumbs.db
-ehthumbs.db
-
-# ignore Visual Studio Code specific files
-.vscode/
+# ignore venv
+venv/
