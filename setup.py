@@ -4,7 +4,7 @@ setup(
     name='rsa-encryption',
     version='1.0',
     description='Simple RSA encryption in Python',
-    long_description=open('README.md').read(),
+    long_description=open('README.md', encoding='utf-8').read(),
     long_description_content_type='text/plain',
     url='https://github.com/samyalder/rsa-encryption',
     author='Samy Alderson',
